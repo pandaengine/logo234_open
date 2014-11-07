@@ -1,0 +1,130 @@
+// JavaScript Document
+/*function ShowMailList() {
+document.getElementById("MailList").style.display="block";
+}
+function HiddenMailList() {
+document.getElementById("MailList").style.display="none";
+}
+function ShowFriends() {
+document.getElementById("Friends").style.display="block";
+}
+function HiddenFriends() {
+document.getElementById("Friends").style.display="none";
+}
+function ShowNews() {
+document.getElementById("News").style.display="block";
+}
+function HiddenNews() {
+document.getElementById("News").style.display="none";
+}
+	var xmlhttp = false;
+	//Check if we are using IE.
+	try {
+		//If the javascript version is greater than 5.
+		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+	} catch (e) {
+		//If not, then use the older active x object.
+		try {
+			//If we are using IE.
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		} catch (E) {
+			//Else we must be using a non-IE browser.
+			xmlhttp = false;
+		}
+	}
+	
+	//If we are using a non-IE browser, create a JavaScript instance of the object.
+	if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+		xmlhttp = new XMLHttpRequest();
+	}
+
+	//var show= true;
+	function show(content) {
+		    var objID = "maillist";
+			//var serverPage ="'./home/Tpl/default/Public/" +content+".html'";
+			var serverPage="'./" +content+".html'";
+			alert(serverPage);
+			var obj = document.getElementById(objID);
+			xmlhttp.open("GET", serverPage);
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					obj.innerHTML = xmlhttp.responseText;
+				}else{alert("获取内容失败");}
+			}
+			xmlhttp.send(null);
+		
+	}
+
+
+	*/
+
+
+
+
+		var xmlhttp = false;
+	
+	//Check if we are using IE.
+	try {
+		//If the javascript version is greater than 5.
+		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+	} catch (e) {
+		//If not, then use the older active x object.
+		try {
+			//If we are using IE.
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		} catch (E) {
+			//Else we must be using a non-IE browser.
+			xmlhttp = false;
+		}
+	}
+	
+	//If we are using a non-IE browser, create a JavaScript instance of the object.
+	if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+		xmlhttp = new XMLHttpRequest();
+	}
+	
+	//A variable used to distinguish whether to open or close the calendar.
+	function showmail(event,cate) {
+		
+		//The location we are loading the page into.
+		/*var  catee;
+					alert(catee);
+					alert(event);
+		    var objID = "maillist";
+			var obj = document.getElementById(objID);
+					obj.style.display="block";
+            	var posx = event.clientX + document.body.scrollLeft;
+		        var posy = event.clientY + document.body.scrollTop;
+		            obj.style.left = posx + "px";
+		            obj.style.top = posy + "px";
+			        obj.innerHTML = "找不到页面";*/
+		    var objID = "maillist";
+			var serverPage = "./home/Tpl/default/Public/"+cate+".html";
+			var obj = document.getElementById(objID);
+			xmlhttp.open("GET", serverPage);
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					obj.style.display="block";
+            	var posx = event.clientX + document.body.scrollLeft;
+		        var posy = event.clientY + document.body.scrollTop;
+		            obj.style.left = posx + "px";
+		            obj.style.top = posy + "px";
+					obj.innerHTML = xmlhttp.responseText;
+				}else{
+					obj.style.display="block";
+            	var posx = event.clientX + document.body.scrollLeft;
+		        var posy = event.clientY + document.body.scrollTop;
+		            obj.style.left = posx + "px";
+		            obj.style.top = posy + "px";
+			        obj.innerHTML = "Loading....";
+		}
+			}
+			xmlhttp.send(null);
+		} 
+		
+		function hiddenmail(){
+			var obj = document.getElementById("maillist");
+				obj.style.display="none";
+		
+		}
+	

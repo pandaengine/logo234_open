@@ -1,0 +1,26 @@
+
+<include file="Tpl:header" />
+<div class="clear"></div>
+<div id="content">
+<div id="menu">
+<include file="Tpl:menu" />
+</div>
+<div id="main">
+ <ul>
+ <volist name="catelist" id="vo"> 
+ <php>
+$goto234=M('cate');
+$pid=$vo['pid'];
+$count=$vo['count'];
+if($count<4){
+ if(!$pid==0){
+echo  "<li class='bcate'><div><a href='__ROOT__/html/".$vo['name_html'].".html'>".$vo['name']."</a></div></li>";
+ }else{
+echo  "<li class='nextcate'><div><a href='__ROOT__/html/".$vo['name_html'].".html'>".$vo['name']."</a></div></li>";
+ }}
+ </php>
+ </volist>
+</ul>
+</div>
+</div>
+<include file="Tpl:footer" />

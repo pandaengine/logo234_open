@@ -1,0 +1,59 @@
+<html>
+ <head>
+  <title> {$title} </title>
+
+<style type="text/css">
+b{color:red;}
+</style>
+ </head>
+ <body>
+<form action="__URL__/save" method="post">
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tr bgcolor="#000099"><td colspan="12" style="color:#ffffff">提交功能模块信息</tr>
+<tr><td colspan="12" style="color:">选择:
+<input type="radio" name="cid" value="1" /> 后台
+<input type="radio" name="cid" value="2" /> 前台
+</tr>
+<tr bgcolor="#ffffcc">
+<td>
+英文模块名：<input type="text" name="name"/><br/>
+中文模块名：<input type="text" name="name_zh"/><br/>
+模块描述：&nbsp;&nbsp;<input type="text" name="description"/><br/>
+<input type="submit" value="提交">
+</td>
+</tr>
+</table>
+</form>
+
+
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tr bgcolor="#000099"><td colspan="12" style="color:#ffffff">工具箱(所有功能)</tr>
+<tr><td colspan="12" style="color:red">后台</tr>
+<volist name="tools" id="vo">
+<php>if($vo['cid']==1){ </php>
+<tr bgcolor="#ffffcc">
+<td size=10%>{$vo['id']}</td>
+<td size=10%><b>{$vo['name']}</b></td>
+<td size=20%>{$vo['name_zh']}</td>
+<td size=30%>{$vo['description']}</td>
+<td size=30%><a href="__APP__/{$vo['name']}">__APP__/{$vo['name']}</td>
+</tr>
+<php>}</php> 
+</volist>
+
+<tr><td colspan="12" style="color:red">前台</tr>
+<volist name="tools" id="vo">
+<php>if($vo['cid']==2){ </php>
+<tr bgcolor="#ffffcc">
+<td size=10%>{$vo['id']}</td>
+<td size=10%><b>{$vo['name']}</b></td>
+<td size=20%>{$vo['name_zh']}</td>
+<td size=30%>{$vo['description']}</td>
+<td size=30%><a target="_blank"  href="__ROOT__/home.php/{$vo['name']}">__ROOT__/home.php/{$vo['name']}</td>
+</tr>
+<php>}</php> 
+</volist>
+
+</table>
+ </body>
+</html>

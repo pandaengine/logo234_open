@@ -1,0 +1,116 @@
+<html>
+ <head>
+  <title> {$title} </title>
+
+<style type="text/css">
+#list{
+
+}
+#list .li2{
+background:gray;
+margin:10px;
+}
+#list .li img{
+height:50px;;
+width:100px;;
+}
+#table_up tr td{
+padding-left:10px;
+}
+
+</style>
+
+ </head>
+
+ <body>
+<form action="__URL__/upload" method="post" enctype="multipart/form-data">
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tbody>
+<tr bgcolor="#EEF4EA" height="26">
+<td style="padding-left:10px;" colspan="7">                        
+<b>首页</b>
+</td>
+</tr>
+<tr bgcolor="#FBFCE2"height="25">
+<td>选择logo：<input type="file" name="file"></td>
+</tr>
+<tr>
+<tr bgcolor="#FBFCE2" height="25">
+<td>网站名称：<input type="text" name="title"> </td>
+</tr>
+<tr bgcolor="#FBFCE2"  height="25">
+<td>网站地址：<input type="text" name="url"></td>
+</tr>
+<tr bgcolor="#FBFCE2" height="25">
+<td>
+<input type="hidden" name="id">
+<input type="submit" value="提交">
+</td></tr>
+</tr>
+</tbody>
+</table>
+</form>
+
+
+
+
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tbody>
+<tr bgcolor="#EEF4EA" height="26">
+<td style="padding-left:10px;" colspan="7"> 网址列表 </td>
+</tr>
+<tr bgcolor="#FBFCE2" align="center" height="25">
+<td width="13%">网站logo</td>
+<td width="5%">ID</td>
+<td width="25%">网站名称</td>
+<td width="37%">url</td>
+<td width="10%">分类</td>
+<td width="10%">排序</td>
+</tr>
+</tbody>
+</table>
+
+
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tbody>
+
+<volist name="listname" id="vo" >  
+<tr bgcolor="#EEF4EA">
+<td width="13%" align="center">
+<img width="80" border="0" height="60" alt="文档图片" src="__PUBLIC__/uploads/index/{$vo['filename']}">
+</td>
+<td width="5%">
+{$vo['id']}
+<td width="25%">
+<b>
+{$vo['title']}
+</b>
+<br/>
+<a href="__URL__/edit/id/{$vo['id']}">编辑</a>
+<a href="__URL__/del/id/{$vo['id']}">删除</a>
+</td>
+<td width="37%" align="center" height="26">
+{$vo['url']}
+
+</td>
+<td width="10%">index</td>
+<td width="10%">{$vo['sort']}</td>
+</tr>
+</volist>
+
+
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>

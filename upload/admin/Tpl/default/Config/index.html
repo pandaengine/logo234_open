@@ -1,0 +1,63 @@
+<style type="text/css">
+input{width:600px;}
+
+
+</style>  
+  <form action="__URL__/update" method="post">
+  <table>
+  <tr>
+  <td width=200px > Title:</td>         
+  <td width=400px height=40px > <input name="title" type="text" value="{$config['title']}"/></td>
+  </tr>
+  <tr>
+  <td>Keywords</td>         
+  <td><input name="keywords" type="text" value="{$config['keywords']}"/></td>
+  </tr>
+  <tr>
+  <td>description</td>      
+  <td><input name="description" type="text" value="{$config['description']}"/></td>
+  </tr>
+  <tr>
+  <td>url</td>                 
+  <td><input name="url" type="text" value="{$config['url']}"/></td>
+  </tr>
+  <tr>
+  <td> title2 </td>                 
+  <td><input name="title2" type="text" value="{$config['title2']}"/></td>
+  </tr>
+</table> 
+
+  <input type="hidden" value="1" name="id">
+  <input  type="submit" value="保存修改" style="width:100px;"/>
+  </form>
+ 
+
+ <hr/>
+
+   <form action="__URL__/updatemore" method="post">
+  <table>
+  <tr>
+  <td width=200px > Title:</td>         
+  <td width=400px height=40px > <input name="title" type="text" value="{$configmore['title']}"/></td>
+  </tr>
+  <tr>
+  <td>Keywords</td>         
+  <td><input name="keywords" type="text" value="{$configmore['keywords']}"/></td>
+  </tr>
+  <tr>
+  <td>description</td>      
+  <td><input name="description" type="text" value="{$configmore['description']}"/></td>
+  </tr>
+  <tr>
+  <td>url</td>                 
+  <td><input name="url" type="text" value="{$configmore['url']}"/></td>
+  </tr>
+  <tr>
+  <td> title2 </td>                 
+  <td><input name="title2" type="text" value="{$configmore['title2']}"/></td>
+  </tr>
+</table> 
+
+  <input type="hidden" value="1" name="id">
+  <input  type="submit" value="保存修改" style="width:100px;"/>
+  </form>

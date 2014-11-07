@@ -1,0 +1,100 @@
+<html>
+ <head>
+<style type="text/css">
+#table_up tr td{
+padding:2px 0;
+padding-left:2px;
+margin:0;
+}
+</style>
+ </head>
+ <body>
+<table id="table_up" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center">
+<tr bgcolor="#9999cc"height="25">
+<td>功能表:</td>
+<td><a href="__APP__/Qcate">快速增加分类</a></td>
+<td><a href="__APP__/Good">推荐分类</td>
+</tr> 
+</table>
+
+
+ <table id="table_up" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center">
+
+
+
+ <tr bgcolor="#ffff99"height="25">
+ <td width="1%">key</td>
+ <td width="1%" >ID</td>
+ <td width="1%">Sort</td>   
+ <td width="3%">英文名</td>
+ <td width="8%">类名 </td> 
+ <td width="3%">文档数</td>   
+ <td width="4%">查看文档 </td>
+ <td width="6%">预览 </td>
+ <td width="6%">更多 </td>
+ <td width="3%">更改 </td>
+ <td width="3%">排序 </td>
+ <td width="4%">增加网址</td>
+</tr> 
+
+ <tr bgcolor="#FBFCE2" height="25">
+ <td>0</td>
+ <td>think_index</td>
+ <td>index</td>
+ <td>首页</td> 
+ <td>无</td>
+ <td>
+<php>
+$goto234=M('index');
+$list=$goto234->count();
+echo $list;
+</php>
+ 
+ </td>   
+ <td><a href="__URL__/view_index"> 查看文档 </a></td>
+ <td><a href="__APP__/View/index" target="_blank">预览</a>&nbsp;&nbsp;<a href="__APP__/View/index?build_html=1" target="_blank">生成Html</a></td>
+ <td><a href="__APP__/View/index?more_cateid=index" target="_blank"> 预览 </a><a href="__APP__/View/index?more_cateid=index&build_html=1" target="_blank"> 生成more首页 </a></td>
+ <td><a href="__ROOT__/xiaowanghnu.php/sort"> 排序 </a></td>
+ <td><a>  </a></td>
+ <td> </td>
+</tr> 
+
+ <volist name="alist" id="vo" key="k">
+<tr bgcolor="#FBFCE2"height="25">
+ <td>{$k}</td>
+ <td>{$vo['id']}</td>
+ <td>{$vo['sort']}</td>
+ <td>{$vo['name_html']}</td>
+
+ <td>
+ <php>
+ for($i=0;$i<$vo['count']*2;$i++){
+ echo '&nbsp;';
+ }
+</php>
+{$vo['name']}
+ </td>   
+
+<td>
+<b>
+<php>
+$file=M('site');
+$id=$vo['id'];
+$list=$file->where("cid=$id")->count();
+//dump($list);
+echo $list;
+</php>
+</b>
+</td>
+ <td><a href="__URL__/view/id/{$vo['id']}"> 查看文档 </a></td>
+ <td><a href="__APP__/View/index/cateid/{$vo['id']}" target="_blank">预览</a>&nbsp;&nbsp;<a href="__APP__/View/index/cateid/{$vo['id']}?build_html=1" target="_blank">生成Html</a></td>
+ <td><a href="__APP__/View/index?more_cateid={$vo['id']}" target="_blank">预览</a>&nbsp;&nbsp;<a href="__APP__/View/index?more_cateid={$vo['id']}&build_html=1" target="_blank"> 生成more</a></td>
+ <td><a href="__URL__/edit/id/{$vo['id']}"> 更改 </a></td>
+ <td><a href="__URL__/sortsite/id/{$vo['id']}"> 排序 </a></td>
+ <!--<td>删除</td>-->
+ <td><a href="__APP__/Add/index/id/{$vo['id']}">增加网址</a></td>
+</tr> 
+ </volist>
+</table>
+ </body>
+</html>

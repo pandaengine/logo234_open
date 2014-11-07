@@ -1,0 +1,68 @@
+<html>
+ <head>
+  <title> {$title} </title>
+
+<style type="text/css">
+#list{
+
+}
+#list .li2{
+background:gray;
+margin:10px;
+}
+#list .li img{
+height:50px;;
+width:100px;;
+}
+#table_up tr td{
+padding-left:10px;
+}
+table tr td{
+font-size:12px;
+line-height:12px;
+}
+</style>
+</head>
+<body>
+
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tbody>
+<tr bgcolor="#EEF4EA" >
+<td style="padding-left:10px;" colspan="7"> 网址列表 </td>
+</tr>
+<tr bgcolor="#FBFCE2" align="center">
+<td width="5%">ID</td>
+<td width="20%">排序</td>
+<td width="25%">title</td>
+<td width="25%">url</td>
+<td width="25%">分类</td>
+</tr>
+
+<volist name="sitelist" id="vo" >  
+<tr bgcolor="#EEF4EA">
+<td width="5%">
+{$vo['id']}
+</td>
+<td width="20%" >
+<form action="__URL__/updatesort" method="post" style="height:20px;margin:0;padding:0;">
+<input name="sort" type="text" value="{$vo['sort']}" style="width:40px; "/>
+<input type="hidden" value="{$vo['id']}" name="id">
+<input type="submit" value="保存排序" >
+</form>
+</td>
+<td width="25%">
+<b>
+{$vo['title']}
+</b>
+</td>
+<td width="25%" align="center">
+{$vo['url']}
+
+</td>
+<td width="25%">{$vo['cid']}</td>
+</tr>
+</volist>
+</tbody>
+</table>
+</body>
+</html>

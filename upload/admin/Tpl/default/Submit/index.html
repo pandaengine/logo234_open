@@ -1,0 +1,71 @@
+<html>
+ <head>
+  <title> {$title} </title>
+
+<style type="text/css">
+#list{
+
+}
+#list .li2{
+background:gray;
+margin:10px;
+}
+#list .li img{
+height:50px;;
+width:100px;;
+}
+#table_up tr td{
+padding-left:10px;
+}
+table tr td{
+font-size:12px;
+line-height:12px;
+}
+</style>
+</head>
+<body>
+
+
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tbody>
+<tr bgcolor="#EEF4EA" >
+<td style="padding-left:10px;" colspan="7"> 网址列表 </td>
+</tr>
+<tr bgcolor="#FBFCE2" align="center">
+<td width="5%">ID</td>
+<td width="15%">分类</td>
+<td width="15%">name</td>
+<td width="25%">url</td>
+<td width="25%">E-mail</td>
+<td width="15%">网站类型</td>
+</tr>
+<volist name="listname" id="vo" >  
+<tr bgcolor="#EEF4EA" >
+<td >{$vo['id']}</td>
+<td >
+<php>
+$cid=$vo['cid'];
+if($cid==1){echo "申请收录";}else{
+if($cid==2){echo "友情链接";}else{echo "none";}
+}
+</php>
+</td>
+
+<td>
+<b>
+{$vo['name']}
+</b>
+</td>
+<td align="center">
+{$vo['url']}
+</td>
+<td>{$vo['email']}</td>
+<td>{$vo['cate']}</td>
+
+</tr>
+</volist>
+</tbody>
+</table>
+
+</body>
+</html>

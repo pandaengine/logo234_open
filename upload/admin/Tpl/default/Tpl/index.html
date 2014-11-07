@@ -1,0 +1,20 @@
+
+<include file="Tpl:header" />
+<div class="clear"></div>
+<div id="content">
+<div id="menu">
+<include file="Tpl:menu" />
+</div><!-- end menu -->
+<div id="main">
+ <ul>
+<volist name="listname" id="vo" > 
+ <li>
+ <div>
+<a target="_blank" href="{$vo['url']}" title="{$vo['title']}"><img src="__PUBLIC__/uploads/index/{$vo['filename']}" alt="{$vo['title']}"><a/>
+ </div>
+</li>
+</volist>
+</ul>
+</div>
+</div>
+<include file="Tpl:footer" />

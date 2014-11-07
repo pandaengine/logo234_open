@@ -1,0 +1,20 @@
+<html>
+ <head>
+  <title> {$title} </title>
+ </head>
+
+ <body>
+  <form action="__URL__/update" method="post">
+sort排序：<input type="text" name="sort" value="{$list['sort']}"><br/>
+中文名：<input type="text" name="name"  value={$list['name']} ><br />
+英文名：<input type="text" name="name_html" value="{$list['name_html']}"><br/>
+<input type="hidden" value="{$list['id']}" name="id">
+<input type="submit" value="submit">
+</form>
+
+
+
+
+
+ </body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+ <head>
+  <title> {$title} </title>
+<style type="text/css">
+#list{
+
+}
+#list .li2{
+background:gray;
+margin:10px;
+}
+#list .li img{
+height:50px;
+width:100px;
+}
+
+#view{
+background: url("__PUBLIC__/img/photo_view.gif");
+  height:65px;
+  width:85px;
+  padding:10px;
+}
+
+
+
+</style>
+ </head>
+
+ <body>
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tbody>
+<tr bgcolor="#EEF4EA" height="26">
+<td style="padding-left:10px;" colspan="7"> 网址列表 </td>
+</tr>
+<tr bgcolor="#FBFCE2" align="center" height="25">
+<td width="13%">网站logo</td>
+<td width="30%">网站名称</td>
+<td width="37%">url</td>
+<td width="10%">分类</td>
+<td width="10%">排序</td>
+</tr>
+</tbody>
+</table>
+
+
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tbody>
+
+<volist name="list" id="vo"  >  
+
+<tr bgcolor="#EEF4EA">
+<td width="13%" align="center">
+<span id="view2"><img width="80" border="0" height="60" src="__PUBLIC__/uploads/index/{$vo['filename']}"><span>
+</td>
+<td width="30%">
+<b>
+{$i}:
+{$vo['title']} 
+</b>
+<br/>
+<a href="__URL__/edit/id/{$vo['id']}">编辑</a>
+<a href="__URL__/del/id/{$vo['id']}">删除</a>
+
+
+
+
+</td>
+<td width="37%" align="center" height="26">
+{$vo['url']}
+
+</td>
+<td width="5%"> {$vo['cid']}</td>
+<td width="5%"> {$vo['name']}</td>
+<td width="10%"> {$vo['id']}</td>
+</tr>
+</volist>
+
+
+
+</tbody>
+</table>
+ </body>
+</html>

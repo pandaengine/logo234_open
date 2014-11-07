@@ -1,0 +1,622 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Logo之家--清新可视化网址导航</title>
+<meta name="description" content="Logo之家是新一代的可视化网址导航，包含 生活、娱乐、学习、工具箱四大方面，致力于帮助广大网友更高效率的利用互联网、更方便的记忆和选择自己需要的网站。" />
+<meta name="keywords" content="logo之家,可视化网址导航,清新网址导航,logo导航" />
+<link href="/zend/_Logo234/logo234_open_upload/upload/Public/css/css.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/zend/_Logo234/logo234_open_upload/upload/Public/css/search.css" rel="stylesheet" media="screen" type="text/css" />
+<script  src="/zend/_Logo234/logo234_open_upload/upload/Public/js/js.js" type="text/javascript"></script>
+<script  src="/zend/_Logo234/logo234_open_upload/upload/Public/js/core.js" type="text/javascript"></script>
+<script type="text/javascript">
+var WWW_ROOT='/zend/_Logo234/logo234_open_upload/upload';
+</script>
+<style type="text/css">
+# a{
+display: block;
+height: 20px;
+width: 54px;
+
+background-color: #4D9035;
+color: #FFFFFF;
+font-weight: bold;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div id="logo234">
+<div id="toper">
+<div id="mail">
+<a href="#" onclick="showmail(event,'mail')"  onfocus="this.blur()" title="邮箱登录快速入口"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/img/mail.gif" /> 邮箱快速登录</a>
+<a href="#" onclick="showmail(event,'talk')"  onfocus="this.blur()" title="微博、空间快速入口"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/img/talk.gif"/>  聊天 </a>
+<a href="#" onclick="showmail(event,'news')"  onfocus="this.blur()" title=" 新闻网快速入口"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/img/news.gif"  />   资讯 </a>
+</div> 
+<div id="maillist" style="display:none;" onclick="hiddenmail()"></div>
+<div id="date">
+<script> 
+// var today=new Date();                                
+// document.write(today.getMonth()+1,"月",today.getDate(),"日","  ","星期"+"日一二三四五六".substring(today.getDay(),today.getDay()+1) ); 
+</script> 
+<!-- <span id="time"></span> -->
+</div>
+</div>
+<div id="header">
+<div id="logo"><a href="http://www.logo234.com" target="_parent" title="Logo之家--清新可视化网址导航"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/img/logo.gif" /></a>
+</div>
+ <div id="search">
+<!--tab-->
+<div id="sm" class="clearfix">
+<ul id="sm_tab">
+                                <li s_tab="js_type_8" >新闻</li>
+                                <li s_tab="js_type_2"  class="active" default="1">网页</li>
+                                <li s_tab="js_type_9" >MP3</li>
+                                <li s_tab="js_type_10" >视频</li>
+
+                                <li s_tab="js_type_11" >图片</li>
+                                <li s_tab="js_type_12" >地图</li>
+                                <li s_tab="js_type_13" >知道</li>
+</ul>
+</div>
+<!--baidu google-->
+<div id="sb" class="clearfix">
+
+<!-- js_type_8 -->
+
+<div id="js_type_8"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_29" name="search_select" rad="engine_29"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_33" name="search_select" rad="engine_33"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_8 -->
+
+<!-- js_type_2 -->
+<div id="js_type_2" >
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_4" name="search_select" rad="engine_4"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_13" name="search_select" rad="engine_13"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_2 -->
+
+<!-- js_type_9 -->
+
+<div id="js_type_9"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" rel="btn" />
+<div class="ctrl">
+ <label><input class="radio" type="radio" value="engine_16" name="search_select" rad="engine_16"  checked="checked" />百度</label>
+ <label><input class="radio" type="radio" value="engine_24" name="search_select" rad="engine_24"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_9 -->
+<!-- js_type_10 -->
+<div id="js_type_10"  style="display:none">
+<div class="sf">
+<form method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_17" name="search_select" rad="engine_17"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_25" name="search_select" rad="engine_25"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_10 -->
+
+<!-- js_type_11 -->
+<div id="js_type_11"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_18" name="search_select" rad="engine_18"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_26" name="search_select" rad="engine_26"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_11 -->
+
+<!-- js_type_12 -->
+<div id="js_type_12"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_32" name="search_select" rad="engine_32"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_21" name="search_select" rad="engine_21"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_12 -->
+
+
+<!-- js_type_13 -->
+ <div id="js_type_13"  style="display:none">
+ <div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_31" name="search_select" rad="engine_31"  checked="checked" />百度</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_13 -->
+</div><!--end sb-->
+</div><!--search-->
+
+
+
+<!--脚本开始-->
+ 
+<script type="text/javascript">
+    try{
+		if(window.SR){
+			SR.SearchData = {
+                                    engine_4: {
+						action: "http://www.baidu.com/s",
+						name: "wd",
+						btn: "百度一下",
+						img: ["百度","static/images/s/baidu.gif"],
+						url: "http://www.114la.com/jingjian.html",
+						params: {
+							
+						}
+                    },
+                                    engine_16: {
+						action: "http://mp3.baidu.com/m",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度mp3","static/images/s/mp3.gif"],
+						url: "http://mp3.baidu.com/m?ie=utf-8&ct=134217728&word=",
+						params: {
+							f: "ms",
+ct: "134217728"
+						}
+                    },
+                                    engine_17: {
+						action: "http://video.baidu.com/v",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度视频","static/images/s/video.gif"],
+						url: "http://video.baidu.com/",
+						params: {
+							ct:'301989888',
+rn:'20',
+pn:'0',
+db:'0',
+s:'0',
+fbl:'800'
+						}
+                    },
+                                    engine_18: {
+						action: "http://image.baidu.com/i",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度图片","static/images/s/pic.gif"],
+						url: "http://image.baidu.com/",
+						params: {
+							ct: "201326592",
+cl: "2",
+pv: "",
+lm: "-1"
+						}
+                    },
+                                    engine_29: {
+						action: "http://news.baidu.com/ns",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度新闻","static/images/s/news.gif"],
+						url: "http://news.baidu.com/",
+						params: {
+							
+						}
+                    },
+                                    engine_31: {
+						action: "http://zhidao.baidu.com/q",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度一下","static/images/s/zhidao.gif"],
+						url: "http://zhidao.baidu.com/q?pt=ylmf_ik",
+						params: {
+							tn: "ikaslist",
+ct: "17",
+pt: "ylmf_ik"
+						}
+                    },
+                                    engine_32: {
+						action: "http://map.baidu.com/m",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度地图","static/images/s/baidu.gif"],
+						url: "http://map.baidu.com/",
+						params: {
+							
+						}
+                    },
+                                    engine_13: {
+						action: "http://www.google.com.hk/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://www.google.com.hk/webhp?prog=aff&client=pub-0194889602661524&channel=3192690043",
+						params: {
+							client:'pub-0194889602661524',
+channel :'3192690043',
+forid :'1',
+prog :'aff',
+hl :'zh-CN',
+source :"sdo_sb_html",
+ie:'utf-8'
+						}
+                    },
+                                    engine_21: {
+						action: "http://ditu.google.cn/maps",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌地图","static/images/s/google.gif"],
+						url: "http://ditu.google.cn/",
+						params: {
+							
+						}
+                    },
+                                    engine_24: {
+						action: "http://www.google.cn/music/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://www.google.cn/music/homepage",
+						params: {
+							aq: "f",
+ie: "utf-8",
+oe: "utf8",
+hl: "zh-CN"
+						}
+                    },
+                                    engine_25: {
+						action: "http://www.google.com.hk/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://www.google.com.hk/videohp",
+						params: {
+							tbo: "p",
+tbs: "vid:1",
+source: "vgc",
+ie:'utf-8'
+						}
+                    },
+                                    engine_26: {
+						action: "http://images.google.com.hk/images",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://images.google.com.hk/imgcat/imghp?hl=zh-CN",
+						params: {
+							gbv: "2",
+source: "hp",
+hl: "zh-CN"
+						}
+                    },
+                                    engine_33: {
+						action: "http://news.google.com.hk/news/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://news.google.com.hk/",
+						params: {
+							ie:'utf-8'
+						}
+                    },
+                				none:{}}}
+		
+		var sbBox = document.getElementById('sb');
+		var sbForms = sbBox.getElementsByTagName('form');
+		for(var i = 0,len = sbForms.length;i < len;i++){
+			sbForms[i].reset();
+		}
+		
+		var sbRadios = sbBox.getElementsByTagName('input');
+		var inputTxtArr = [];
+		if(sbRadios.length){
+			var setRadios = [];
+			for(var i = 0,len = sbRadios.length;i < len;i++){
+				var input = sbRadios[i];
+				if(input.getAttribute("rad") && input.checked){
+					setRadios.push(input);
+				}
+				else if(input.getAttribute("rel") == "kw"){
+					var key = inputTxtArr.push(input);
+					input.setAttribute("index",key - 1);
+					
+				}
+			}
+			try{
+			for(var i = 0,len = setRadios.length;i < len;i++){
+				var input = setRadios[i];
+				
+				SR.RadioMod.ClickRadio(input);
+			}
+			}catch(e){}}}catch(e){}
+    </script>
+
+
+
+
+ 
+
+
+
+
+
+ 
+</div>
+ <div id="nav">  
+ <ul>
+ <li class="now">
+ 分类： </li>
+ <li id="news"><a href="/zend/_Logo234/logo234_open_upload/upload/html/news.html">新闻</a></li><li id="shopping"><a href="/zend/_Logo234/logo234_open_upload/upload/html/shopping.html">购物</a></li><li id="news"><a href="/zend/_Logo234/logo234_open_upload/upload/html/news.html">新闻</a></li><li id="xshuo"><a href="/zend/_Logo234/logo234_open_upload/upload/html/xshuo.html">小说</a></li><li id="tiyu"><a href="/zend/_Logo234/logo234_open_upload/upload/html/tiyu.html">体育</a></li><li id="video"><a href="/zend/_Logo234/logo234_open_upload/upload/html/video.html">视频</a></li> </ul>
+
+
+ </div> 
+
+<div class="clear"></div>
+<div id="content">
+<div id="menu">
+<!--栏目分类 开始-->
+<div class="menu_2">
+<dl class="menu_main"> 
+<dt><a href="/zend/_Logo234/logo234_open_upload/upload/html/allcate.html">快速分类</a></dt> 
+</dl>
+<dl class="menu_main"> 
+<dt class="shenghuo"><a href="/zend/_Logo234/logo234_open_upload/upload/html/shenghuo.html">生活</a></dt> 
+<dd> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/shopping.html">购物</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/caijing.html">财经</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/bank.html">银行</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/lvyou.html">旅游</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/jiankang.html">健康</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/zhaopin.html">招聘</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/auto.html">汽车</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/phone.html">手机</a></span>
+</dd> 
+</dl> 
+
+<dl class="menu_main"> 
+<dt class="yule"><a href="/zend/_Logo234/logo234_open_upload/upload/html/yule.html">娱乐</a></dt> 
+<dd> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/news.html">新闻</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/game.html">游戏</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/shequ.html">社区</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/dushu.html">读书</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/video.html">视频</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/photo.html">图片</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/tiyu.html">体育</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/mingxing.html">明星</a></span>
+</dd> 
+</dl> 
+
+<dl class="menu_main"> 
+<dt class="xuexi"><a href="/zend/_Logo234/logo234_open_upload/upload/html/learn.html">学习</a></dt> 
+<dd> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/jiaoyu.html">教育</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/waiyu.html">外语</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/exam.html">应试</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/zhuanye.html">专业</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/lizhi.html">励志</a></span>
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/computer.html">电脑</a></span>
+</dd> 
+</dl>
+
+<dl class="menu_main"> 
+<dt class="gjx"><a href="/zend/_Logo234/logo234_open_upload/upload/html/tools.html">工具箱</a></dt> 
+<dd> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/soft.html">软件</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/zhishi.html">知识</a></span> 
+<span><a href="/zend/_Logo234/logo234_open_upload/upload/html/tool.html">查询</a></span> 
+<span></span> 
+</dd> 
+</dl>
+</div>
+</div><!-- end menu -->
+<div id="main">
+ <ul>
+<li>
+ <div>
+<a target="_blank" href="http://www.baidu.com/" title="百度"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/baidu.gif" alt="百度"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.qq.com/" title="腾讯网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/qq.gif" alt="腾讯网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.163.com/" title="网易"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/163.com.gif" alt="网易"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.sohu.com/" title="搜狐网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/sohu.gif" alt="搜狐网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.google.com.hk/" title="谷歌"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/google.gif" alt="谷歌"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.ifeng.com/" title="凤凰网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/ifeng.com.gif" alt="凤凰网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.xinhuanet.com/" title="新华网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/xinhuanet.com.gif" alt="新华网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.people.com.cn/" title="人民网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/people.gif" alt="人民网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.hunantv.com/" title="湖南卫视金鹰网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/hunan.gif" alt="湖南卫视金鹰网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.10086.cn/" title="中国移动"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/yidong.gif" alt="中国移动"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.renren.com/" title="人人网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/renren.gif" alt="人人网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.kaixin001.com/" title="开心网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/kaixin.gif" alt="开心网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.jiayuan.com/" title="世纪佳缘"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/sjjy.gif" alt="世纪佳缘"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.mop.com/" title="猫扑"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/cat.gif" alt="猫扑"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.tianya.cn/" title="天涯社区"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/tianya.cn.gif" alt="天涯社区"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.weather.com.cn/" title="中国天气网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/tianqi.gif" alt="中国天气网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.58.com/" title="58同城"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/58.gif" alt="58同城"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.ganji.com/" title="赶集网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/ganji.gif" alt="赶集网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.qunar.com/" title="去哪儿网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/qunar.com.gif" alt="去哪儿网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.ctrip.com/" title="携程网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/ctrip.com.gif" alt="携程网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.xunlei.com/" title="迅雷看看"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/xunlei.gif" alt="迅雷看看"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.youku.com/" title="优酷"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/youku.gif" alt="优酷"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.4399.com/" title="4399小游戏"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/4399.com.gif" alt="4399小游戏"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.taobao.com/" title="淘宝"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/taobao.gif" alt="淘宝"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.dangdang.com/" title="当当网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/dangdang.gif" alt="当当网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.zol.com.cn/" title="中关村在线"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/zol.gif" alt="中关村在线"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.pcpop.com/" title="泡泡网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/paopao.gif" alt="泡泡网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.autohome.com.cn/" title="汽车之家"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/autohome.com.cn.gif" alt="汽车之家"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.bitauto.com/" title="易车网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/yiche.gif" alt="易车网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.dianping.com/" title="大众点评网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/dianping.com.gif" alt="大众点评网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.eastmoney.com/" title="东方财富网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/dfcf.gif" alt="东方财富网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.51job.com/" title="前程无忧"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/wuyou.gif" alt="前程无忧"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.chinahr.com/" title="中华英才网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/chinahr.gif" alt="中华英才网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.chinahr.com/" title="白虎"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/baihe.gif" alt="白虎"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://shenzhen.anjuke.com/" title="安居客"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/anjuke.com1.gif" alt="安居客"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.rayli.com.cn/" title="瑞丽女性网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/rayli.com.cn.gif" alt="瑞丽女性网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://www.gov.cn/" title="中国政府网"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/gov.gif" alt="中国政府网"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://cn.yahoo.com/" title="雅虎"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/yahoo.gif" alt="雅虎"><a/>
+ </div>
+</li><li>
+ <div>
+<a target="_blank" href="http://cn.msn.com/" title="MSN"><img src="/zend/_Logo234/logo234_open_upload/upload/Public/uploads/index/msn.gif" alt="MSN"><a/>
+ </div>
+</li></ul>
+</div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<div>
+<a href="/zend/_Logo234/logo234_open_upload/upload/more/">更多网址</a>  |  
+<a href="/zend/_Logo234/logo234_open_upload/upload/about.html">关于我们</a>  |  
+<a href="/zend/_Logo234/logo234_open_upload/upload/home.php/Submit">提交网站</a>  |   
+友情链接：
+<a target="_blank" href="http://www.qingcms.com/">QingCms</a>   
+<a target="_blank" href="http://www.dev234.com/">开发者日记</a>   
+</div>
+<!--请勿删除版权信息，否则我们有权终止您的使用-->
+<p class="copyright">Powered by <a target="_blank" href="http://www.logo234.com/">Logo234可视化网址导航</a>  All Rights Reserved.</p>
+<br/>
+<br/>
+</div>
+</div> 
+</body>
+</html>

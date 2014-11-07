@@ -1,0 +1,48 @@
+<include file="Tpl:header" />
+<div class="clear"></div>
+<div id="content">
+<div id="menu">
+<include file="Tpl:menu" />
+</div><!-- end menu -->
+<div id="main">
+<ul>
+<volist name="listname" id="vo" offset="0" length='24'> 
+<li>
+<div>
+<a target="_blank" href="{$vo['url']}" title="{$vo['title']}">
+<img  border="0" src="__PUBLIC__/uploads/
+<php>
+$goto234=M('cate');
+$cid=$vo['cid'];
+$chtml=$goto234->where("id=$cid")->find();
+$dirname=$chtml['name_html'];
+echo $dirname;
+</php>
+/{$vo['filename']}"/>
+</a>
+</div>
+</li>
+</volist>
+ <volist name="next" id="vo2"> 
+ <li  class="nextcate"><div><a href="__ROOT__/html/{$vo2['name_html']}.html">{$vo2['name']}</a></div></li>
+ <volist name="vo2['voo']" id="vo3">   
+ <php>
+$goto234=M('cate');
+$bid=$vo2['pid'];
+$bpid=$goto234->where("id=$bid")->find();
+$bp=$bpid['pid'];
+ if(!$bp==0){
+ echo "<li><div><a target='_blank' title=\"".$vo3['title']."\" href=\"".$vo3['url']."\"><img src=\"__PUBLIC__/uploads/".$vo2['name_html']."/".$vo3['filename']."\"/></a></div></li>
+      ";
+}
+</php>
+ </volist> 
+ </volist>
+<php>
+if($count<=2){ </php>
+ <li  class="more"><div><a target='_blank' href="__ROOT__/more/{$nowcate}.html">更多网址</a></div></li>
+<php> }</php>
+</ul>
+</div><!-- end main -->
+</div><!-- end content -->
+<include file="Tpl:footer" />

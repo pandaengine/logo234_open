@@ -1,0 +1,37 @@
+<html>
+ <head>
+  <title> {$title} </title>
+
+<style type="text/css">
+#table_up tr td{
+padding:0 10px 0 10px;
+}
+
+</style>
+
+ </head>
+
+ <body>
+
+<form action="__URL__/add" method="post">
+
+请选择父栏目：<select name="pid" size="20" > 
+              <option value="0">根栏目</option> 
+
+			  <volist name="alist" id="vo">
+			  <option value="{$vo['id']}">
+			  <php>
+			  for($i=0;$i<$vo['count']*5;$i++){
+			  echo '&nbsp;';
+			  }
+			  </php>
+			  {$vo['name']}</option>
+			  </volist>
+			  </select><br/>
+快速增加栏目：<br/>
+中文：<input type="text" name="name">*必填*<br />
+英文：<input type="text" name="name_html">*必填*<br />
+<input type="submit" value="添加栏目">
+</form>
+ </body>
+</html>

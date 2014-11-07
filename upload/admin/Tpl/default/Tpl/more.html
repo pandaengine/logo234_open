@@ -1,0 +1,9 @@
+
+<include file="Tpl:more_header" />
+<div id="main">
+<php>
+if(is_file('./data/tpl_more/'.$nowcate.'.html'))
+include ('./data/tpl_more/'.$nowcate.'.html');
+</php>
+</div>
+<include file="Tpl:more_footer" />

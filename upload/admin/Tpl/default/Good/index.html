@@ -1,0 +1,75 @@
+<html>
+ <head>
+  <title> {$title} </title>
+
+<style type="text/css">
+tr{height="36";line-height:30px;}
+td{}
+</style>
+
+ </head>
+
+ <body>
+
+<form action="__URL__/add" method="post">
+
+请选择栏目：<br/>
+<select name="cid" size="10" > 
+              <option value="0">根栏目</option> 
+			  <volist name="alist" id="vo">
+			  <option value="{$vo['id']}">
+			  <php>
+			  for($i=0;$i<$vo['count']*5;$i++){
+			  echo '&nbsp;';
+			  }
+			  </php>
+			  {$vo['name']}</option>
+			  </volist>
+			  </select><br/>
+<input type="submit" value="添加到推荐分类">
+</form>
+
+<table width="98%" cellspacing="1" cellpadding="2" border="0" bgcolor="#cfcfcf" align="center" style="margin-top:8px;">
+<tr bgcolor="#ffffcc">
+<td size=25%>ID</td>
+<td>sort</td>
+<td>name</td>
+<td>原分类名</td>
+<td>删除</td>
+</tr>
+<volist name="good" id="vo">
+<tr bgcolor="#EEF4EA">
+<td>{$vo['id']}</td>
+<td>
+<form action="__URL__/update" method="post" style="height:20px;margin:0;padding:0;">
+<input name="sort" type="text" value="{$vo['sort']}" style="width:40px; "/>
+<input type="hidden" value="{$vo['id']}" name="id">
+<input type="submit" value="保存排序" >
+</form>
+</td>
+<td>
+<form action="__URL__/update" method="post" style="height:20px;margin:0;padding:0;">
+<input name="name" type="text" value="{$vo['name']}" style="width:40px; "/>
+<input type="hidden" value="{$vo['id']}" name="id">
+<input type="submit" value="保存" >
+</form>
+</td>
+<td>
+<php>
+$go=M('cate');
+$cid=$vo['cid'];
+$cate=$go->where("id=$cid")->find();
+echo $cate['name'];
+</php>
+</td>
+<td>
+<a href="__URL__/del/id/{$vo['id']}">删除</a>
+</td>
+</tr>
+</volist>
+</table>
+
+
+
+ </body>
+</html>

@@ -1,0 +1,24 @@
+
+<include file="Public:headerindex" />
+<!--######################## header->cotent ######################################-->
+<div class="clear"></div>
+<div id="content">
+<div id="menu">
+<!--######################### menu ######################-->
+<include file="./home/Tpl/default/Public/menu.html" />
+<!--######################### menu #######################-->
+</div><!-- end menu -->
+<div id="main">
+ <ul>
+<volist name="listname" id="vo" > 
+ <li>
+  <div>
+<a target="_blank" href="{$vo['url']}" title="{$vo['title']}"><img src="__PUBLIC__/uploads/index/{$vo['filename']}" alt="{$vo['title']}"><a/>
+  </div>
+</li>
+</volist>
+</ul>
+</div><!-- end main -->
+</div><!-- end content -->
+<!--######################## content->footer ######################################-->
+<include file="./home/Tpl/default/Public/footer.html" />

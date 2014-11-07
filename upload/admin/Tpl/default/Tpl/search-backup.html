@@ -1,0 +1,331 @@
+ <div id="search">
+<!--tab-->
+<div id="sm" class="clearfix">
+<ul id="sm_tab">
+                                <li s_tab="js_type_8" >新闻</li>
+                                <li s_tab="js_type_2"  class="active" default="1">网页</li>
+                                <li s_tab="js_type_9" >MP3</li>
+                                <li s_tab="js_type_10" >视频</li>
+
+                                <li s_tab="js_type_11" >图片</li>
+                                <li s_tab="js_type_12" >地图</li>
+                                <li s_tab="js_type_13" >知道</li>
+</ul>
+</div>
+<!--baidu google-->
+<div id="sb" class="clearfix">
+
+<!-- js_type_8 -->
+
+<div id="js_type_8"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_29" name="search_select" rad="engine_29"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_33" name="search_select" rad="engine_33"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_8 -->
+
+<!-- js_type_2 -->
+<div id="js_type_2" >
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_4" name="search_select" rad="engine_4"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_13" name="search_select" rad="engine_13"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_2 -->
+
+<!-- js_type_9 -->
+
+<div id="js_type_9"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" rel="btn" />
+<div class="ctrl">
+ <label><input class="radio" type="radio" value="engine_16" name="search_select" rad="engine_16"  checked="checked" />百度</label>
+ <label><input class="radio" type="radio" value="engine_24" name="search_select" rad="engine_24"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_9 -->
+<!-- js_type_10 -->
+<div id="js_type_10"  style="display:none">
+<div class="sf">
+<form method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_17" name="search_select" rad="engine_17"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_25" name="search_select" rad="engine_25"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_10 -->
+
+<!-- js_type_11 -->
+<div id="js_type_11"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_18" name="search_select" rad="engine_18"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_26" name="search_select" rad="engine_26"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_11 -->
+
+<!-- js_type_12 -->
+<div id="js_type_12"  style="display:none">
+<div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_32" name="search_select" rad="engine_32"  checked="checked" />百度</label>
+<label><input class="radio" type="radio" value="engine_21" name="search_select" rad="engine_21"  />谷歌</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_12 -->
+
+
+<!-- js_type_13 -->
+ <div id="js_type_13"  style="display:none">
+ <div class="sf">
+<form  method="get" target="_blank">
+<input type="text" name="q" class="int" autocomplete="off" rel="kw"/>
+<input class="searchint" type="submit"  rel="btn" />
+<div class="ctrl">
+<label><input class="radio" type="radio" value="engine_31" name="search_select" rad="engine_31"  checked="checked" />百度</label>
+</div>
+</form>
+</div>
+</div>
+<!-- js_type_13 -->
+</div><!--end sb-->
+</div><!--search-->
+
+
+
+<!--脚本开始-->
+ 
+<script type="text/javascript">
+    try{
+		if(window.SR){
+			SR.SearchData = {
+                                    engine_4: {
+						action: "http://www.baidu.com/s",
+						name: "wd",
+						btn: "百度一下",
+						img: ["百度","static/images/s/baidu.gif"],
+						url: "http://www.114la.com/jingjian.html",
+						params: {
+							
+						}
+                    },
+                                    engine_16: {
+						action: "http://mp3.baidu.com/m",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度mp3","static/images/s/mp3.gif"],
+						url: "http://mp3.baidu.com/m?ie=utf-8&ct=134217728&word=",
+						params: {
+							f: "ms",
+ct: "134217728"
+						}
+                    },
+                                    engine_17: {
+						action: "http://video.baidu.com/v",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度视频","static/images/s/video.gif"],
+						url: "http://video.baidu.com/",
+						params: {
+							ct:'301989888',
+rn:'20',
+pn:'0',
+db:'0',
+s:'0',
+fbl:'800'
+						}
+                    },
+                                    engine_18: {
+						action: "http://image.baidu.com/i",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度图片","static/images/s/pic.gif"],
+						url: "http://image.baidu.com/",
+						params: {
+							ct: "201326592",
+cl: "2",
+pv: "",
+lm: "-1"
+						}
+                    },
+                                    engine_29: {
+						action: "http://news.baidu.com/ns",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度新闻","static/images/s/news.gif"],
+						url: "http://news.baidu.com/",
+						params: {
+							
+						}
+                    },
+                                    engine_31: {
+						action: "http://zhidao.baidu.com/q",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度一下","static/images/s/zhidao.gif"],
+						url: "http://zhidao.baidu.com/q?pt=ylmf_ik",
+						params: {
+							tn: "ikaslist",
+ct: "17",
+pt: "ylmf_ik"
+						}
+                    },
+                                    engine_32: {
+						action: "http://map.baidu.com/m",
+						name: "word",
+						btn: "百度一下",
+						img: ["百度地图","static/images/s/baidu.gif"],
+						url: "http://map.baidu.com/",
+						params: {
+							
+						}
+                    },
+                                    engine_13: {
+						action: "http://www.google.com.hk/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://www.google.com.hk/webhp?prog=aff&client=pub-0194889602661524&channel=3192690043",
+						params: {
+							client:'pub-0194889602661524',
+channel :'3192690043',
+forid :'1',
+prog :'aff',
+hl :'zh-CN',
+source :"sdo_sb_html",
+ie:'utf-8'
+						}
+                    },
+                                    engine_21: {
+						action: "http://ditu.google.cn/maps",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌地图","static/images/s/google.gif"],
+						url: "http://ditu.google.cn/",
+						params: {
+							
+						}
+                    },
+                                    engine_24: {
+						action: "http://www.google.cn/music/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://www.google.cn/music/homepage",
+						params: {
+							aq: "f",
+ie: "utf-8",
+oe: "utf8",
+hl: "zh-CN"
+						}
+                    },
+                                    engine_25: {
+						action: "http://www.google.com.hk/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://www.google.com.hk/videohp",
+						params: {
+							tbo: "p",
+tbs: "vid:1",
+source: "vgc",
+ie:'utf-8'
+						}
+                    },
+                                    engine_26: {
+						action: "http://images.google.com.hk/images",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://images.google.com.hk/imgcat/imghp?hl=zh-CN",
+						params: {
+							gbv: "2",
+source: "hp",
+hl: "zh-CN"
+						}
+                    },
+                                    engine_33: {
+						action: "http://news.google.com.hk/news/search",
+						name: "q",
+						btn: "谷歌搜索",
+						img: ["谷歌","static/images/s/google.gif"],
+						url: "http://news.google.com.hk/",
+						params: {
+							ie:'utf-8'
+						}
+                    },
+                				none:{}
+            }	
+		}
+		
+		var sbBox = document.getElementById('sb')
+		var sbForms = sbBox.getElementsByTagName('form')
+		for(var i = 0,len = sbForms.length i < len i++){
+			sbForms[i].reset()
+		}
+		
+		var sbRadios = sbBox.getElementsByTagName('input')
+		var inputTxtArr = []
+		if(sbRadios.length){
+			var setRadios = []
+			for(var i = 0,len = sbRadios.length i < len i++){
+				var input = sbRadios[i]
+				if(input.getAttribute("rad") && input.checked){
+					setRadios.push(input)
+				}
+				else if(input.getAttribute("rel") == "kw"){
+					var key = inputTxtArr.push(input)
+					input.setAttribute("index",key - 1)
+					
+				}
+			}
+			try{
+			for(var i = 0,len = setRadios.length i < len i++){
+				var input = setRadios[i]
+				
+				SR.RadioMod.ClickRadio(input)
+			}
+			}catch(e){}
+		}
+	}catch(e){}
+    </script>
+
+
+
+
+ 
+
+
+
+
+
+ 

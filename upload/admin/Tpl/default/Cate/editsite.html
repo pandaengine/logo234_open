@@ -1,0 +1,22 @@
+<html>
+ <head>
+  <title> {$title} </title>
+ </head>
+
+ <body>
+  <form action="__URL__/updateedit" method="post">
+ID：<b>{$sitelist['id']}</b><br />
+sort排序：<input type="text" name="sort"  value="{$sitelist['sort']}" ><br />
+logo地址：<input type="text" name="filename"  value="{$sitelist['filename']}" ><br />
+网站名称：<input type="text" name="title" value="{$sitelist['title']}"><br/>
+网站url：<input type="text" name="url" value="{$sitelist['url']}"><br/>
+<input type="hidden" value="{$sitelist['id']}" name="id">
+<input type="submit" value="submit">
+</form>
+
+
+
+
+
+ </body>
+</html>
